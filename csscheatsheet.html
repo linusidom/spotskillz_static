@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Demo Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/csscheatsheet.css' %}">
+    </head>
+    <body>
+   
+	<header id="main-header">
+		<div class="container">
+			<h1>SpotWerkz</h1>
+		</div>
+	</header>
+
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="#showcase">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#services">Services</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section id="showcase">
+		<div class="container">
+			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</h1>
+			<p class="hide-on-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nostrum cupiditate eum hic nesciunt eveniet laudantium sint ex dolorem ratione fugit, facere, dolores dolorum, odio porro? Praesentium quos, quo consectetur.</p>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container grid-2">
+			<section id="main">		
+				<h1>Welcome</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+			<aside id="sidebar">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud </p>
+			</aside>
+		</div>
+	</section>
+	
+	<section id='services'>
+		<div class="container">
+			<section id="gridWrapper">
+				<div>
+					<i class="fa fa-chart-pie fa-4x"></i>
+					<h3>Reporting</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, harum.</p>
+				</div>
+				<div>
+					<i class="fa fa-dollar-sign fa-4x"></i>
+					<h3>Marketing</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, harum.</p>
+				</div>
+				<div>
+					<i class="fa fa-users fa-4x"></i>
+					<h3>Support</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, harum.</p>
+				</div>
+				
+			</section>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="container">
+			<form action="">
+				<input type="text" id="formName" placeholder="Enter Your Name">
+				<input type="text" id="formEmail" placeholder="Enter your Email">
+				<textarea id="formText" placeholder="What you like to know about?"></textarea>
+			</form>
+		</div>
+	</section>
+	<footer id="main-footer">
+		<p>SpotWerkz &copy; 2020</p>
+	</footer>
+</body>
+</html>
