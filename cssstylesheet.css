@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sectionHeader {
+    font-size: 2rem;
+}
+
+.sectionPara {
+    opacity: 0.5;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.12rem;
+    margin-top: 1rem;
+    padding-left: 2.3rem;
+}
+
+.redline {
+    width: 25%;
+    border-bottom: 5px solid red;
+    margin-bottom: 0.5rem;;
+    margin-left: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(12,152,186, 0.5);
+}
+
+.navbarLogo{
+    width: 100%;
+}
+
+.navbarHamburger {
+    display: none;
+}
+
+.navbarMenu {
+    width: 100%;
+}
+
+.navbarMenuLinks{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+img {
+    width: 70%;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(12,152,186, 0.5);
+    padding-bottom: 2rem;
+}
+
+.heroImageDiv {
+    width: 100%;
+    text-align: center;
+}
+
+.heroText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.heroHeader {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.heroPara {
+    opacity: 0.5;
+    line-height: 1.3rem;
+    letter-spacing: 0.12rem;
+    margin-top: 1rem;
+    padding-left: 2.3rem;
+}
+
+
+
+/* CONTENT */
+
+.contentOneText .redline {
+    margin: 0.5rem auto;
+}
+
+.contentOneText {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contentOneImages{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* CONTENT TWO */
+
+
+.contentTwoText .redline {
+    margin: 0.5rem auto;
+}
+
+.contentTwoText {
+    padding: 2rem;
+    text-align: right;
+}
+
+.contentTwoImage{
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+@media (max-width: 600px){
+    .hero{
+        flex-direction: column;
+
+    }
+
+    .heroText {
+        width: 100%;
+    }
+
+    .heroPara {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .contentImages{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+}
